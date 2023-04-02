@@ -15,11 +15,14 @@ public class Main {
       public static void main(String[] args) {
 
         List<Integer> unorderedList = new ArrayList<>();
+
         Random rd = new Random();
 
-        for(int i = 0; i < 10_000; i++){
-            unorderedList.add(rd.nextInt());
+        for(int i = 0; i < 20; i++){ // Most of the cases can run up to 100_000_000.
+            unorderedList.add(rd.nextInt(15)); // ...also for the random numbers to put on the list
         }
+
+        System.out.println(unorderedList);
 
         System.out.println(dsaAndTime(new InsertionSort(), unorderedList));
         System.out.println(dsaAndTime(new SelectionSort(),unorderedList));
@@ -27,5 +30,6 @@ public class Main {
         System.out.println(dsaAndTime(new BubbleSort(), unorderedList));
         System.out.println(dsaAndTime(new MergeSort(), unorderedList));
 
+        System.out.println(dsaAndTime(new QuickSort(), unorderedList));
     }
 }
