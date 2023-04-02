@@ -34,11 +34,11 @@ public class QuickSort implements Sort {
             // Break the loop as soon as the pointers match
             if (leftPointer == rightPointer) break;
 
-            // Swap the values of the pointers
+            // Swap the values of the pointers and restarted the process keeping in the loop
             swap(unsortedList, leftPointer, rightPointer);
         }
 
-        // Swap again after the loop result
+        // Swap the pivot and the meeting point
         swap(unsortedList, leftPointer, highIndex - 1);
 
         // Then make the recursion
