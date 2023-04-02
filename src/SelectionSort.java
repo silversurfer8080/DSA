@@ -1,8 +1,8 @@
 import java.util.List;
 
-public class SelectionSort {
+public class SelectionSort implements Sort {
     //it's not a stable algorithm with O(n²) time complexity
-    public static List<Integer> sort(List<Integer> unsortedList){
+    public List<Integer> sort(List<Integer> unsortedList){
         int n = unsortedList.size();
         for (int i = 0; i < n; i++) {
             int minIndex = i; // considering the first index as min value to order and then move on
