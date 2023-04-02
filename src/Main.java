@@ -18,17 +18,17 @@ public class Main {
 
         Random rd = new Random();
 
-        for(int i = 0; i < 20; i++){ // Most of the cases can run up to 100_000_000.
-            unorderedList.add(rd.nextInt(15)); // ...also for the random numbers to put on the list
+        for(int i = 0; i < 2_000_000; i++){ // Most of the cases can run up to 100_000_000.
+            unorderedList.add(rd.nextInt(15_000)); // ...also for the random numbers to put on the list
         }
 
         System.out.println(unorderedList);
-
-        System.out.println(dsaAndTime(new InsertionSort(), unorderedList));
-        System.out.println(dsaAndTime(new SelectionSort(),unorderedList));
-
-        System.out.println(dsaAndTime(new BubbleSort(), unorderedList));
-        System.out.println(dsaAndTime(new MergeSort(), unorderedList));
+////
+//        System.out.println(dsaAndTime(new InsertionSort(), unorderedList));
+//        System.out.println(dsaAndTime(new SelectionSort(),unorderedList));
+//
+//        System.out.println(dsaAndTime(new BubbleSort(), unorderedList));
+//        System.out.println(dsaAndTime(new MergeSort(), unorderedList));
 
         System.out.println(dsaAndTime(new QuickSort(), unorderedList));
     }

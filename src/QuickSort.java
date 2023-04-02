@@ -7,7 +7,7 @@ public class QuickSort implements Sort {
     // This algorithm is not stable, sorting the array in place, but use recursion layers to create new data structures.
     @Override
     public List<Integer> sort(List<Integer> unsortedList) {
-        sort(unsortedList, 0, unsortedList.size() - 1);
+        sort(unsortedList, 0, unsortedList.size());
         return unsortedList;
     }
 
@@ -40,11 +40,6 @@ public class QuickSort implements Sort {
 
         // Swap again after the loop result
         swap(unsortedList, leftPointer, highIndex - 1);
-
-
-        if(unsortedList.get(leftPointer) > unsortedList.get(highIndex)) {
-            swap(unsortedList, leftPointer, highIndex);
-        }
 
         // Then make the recursion
         sort(unsortedList, lowIndex, leftPointer);
