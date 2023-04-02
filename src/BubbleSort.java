@@ -1,9 +1,9 @@
 import java.util.List;
 
-public class BubbleSort {
+public class BubbleSort implements Sort {
     // The time complexity is O(n²) and it's a stable algorithm, also it's an in place since we do not need additional
     // data structure.
-    public static List<Integer> sort(List<Integer> unsortedList){
+    public List<Integer> sort(List<Integer> unsortedList){
         int listSize = unsortedList.size();
         for(int i = listSize -1; i >= 0; i--){ // 1) Moving from the end....
             boolean condition = false;

@@ -1,8 +1,8 @@
 import java.util.List;
 
-public class InsertionSort {
+public class InsertionSort implements Sort {
     //stable algorithm with O(N²) time complexity
-    public static List<Integer> sort(List<Integer> unsortedList){
+    public List<Integer> sort(List<Integer> unsortedList){
         for(int i = 0; i < unsortedList.size(); i++) {
             int current = i;
             while (current > 0 && unsortedList.get(current) < unsortedList.get(current - 1)) {
