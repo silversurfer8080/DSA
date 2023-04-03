@@ -1,3 +1,5 @@
+import contract.Sort;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.*;
@@ -12,8 +14,12 @@ public class Main {
           return " result: " + orderedList + "\n Time taken in Milliseconds for 10k integers array: " +timeElapsed.toMillis();
       }
 
-      public static void main(String[] args) {
 
+
+      public static void main(String[] args) {
+        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
+        int targetInList = 9;// index 5
+        int targetNotInList = 10; //return -1;
         List<Integer> unorderedList = new ArrayList<>();
 
         Random rd = new Random();
@@ -22,7 +28,7 @@ public class Main {
             unorderedList.add(rd.nextInt(15_000)); // ...also for the random numbers to put on the list
         }
 
-        System.out.println(unorderedList);
+//        System.out.println(unorderedList);
 ////
 //        System.out.println(dsaAndTime(new InsertionSort(), unorderedList));
 //        System.out.println(dsaAndTime(new SelectionSort(),unorderedList));
@@ -30,6 +36,9 @@ public class Main {
 //        System.out.println(dsaAndTime(new BubbleSort(), unorderedList));
 //        System.out.println(dsaAndTime(new MergeSort(), unorderedList));
 
-        System.out.println(dsaAndTime(new QuickSort(), unorderedList));
+//        System.out.println(dsaAndTime(new QuickSort(), unorderedList));
+          System.out.println("Ordered list: " + orderedList+ " | Target value: " + targetInList);
+          System.out.println(new BinarySearch().search(orderedList, targetInList));
+
     }
 }

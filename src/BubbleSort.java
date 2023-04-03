@@ -1,3 +1,5 @@
+import contract.Sort;
+
 import java.util.List;
 
 public class BubbleSort implements Sort {
