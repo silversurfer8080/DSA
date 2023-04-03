@@ -22,11 +22,11 @@ public class Main {
         int targetNotInList = 10; //return -1;
         List<Integer> unorderedList = new ArrayList<>();
 
-        Random rd = new Random();
-
-        for(int i = 0; i < 2_000_000; i++){ // Most of the cases can run up to 100_000_000.
-            unorderedList.add(rd.nextInt(15_000)); // ...also for the random numbers to put on the list
-        }
+//        Random rd = new Random();
+//
+//        for(int i = 0; i < 2_000_000; i++){ // Most of the cases can run up to 100_000_000.
+//            unorderedList.add(rd.nextInt(15_000)); // ...also for the random numbers to put on the list
+//        }
 
 //        System.out.println(unorderedList);
 ////
@@ -37,8 +37,10 @@ public class Main {
 //        System.out.println(dsaAndTime(new MergeSort(), unorderedList));
 
 //        System.out.println(dsaAndTime(new QuickSort(), unorderedList));
-          System.out.println("Ordered list: " + orderedList+ " | Target value: " + targetInList);
-          System.out.println(new BinarySearch().search(orderedList, targetInList));
+//        System.out.println(new BinarySearch().search(orderedList, targetInList));
+
+          System.out.println(new RecursiveBinarySearch().search(orderedList, targetInList));
+          System.out.println(new RecursiveBinarySearch().search(orderedList, targetNotInList));
 
     }
 }
