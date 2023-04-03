@@ -14,7 +14,8 @@ public class QuickSort implements Sort {
     }
 
     public void sort(List<Integer> unsortedList, int lowIndex, int highIndex) {
-        if (highIndex - lowIndex <= 1) return; // Edge case, if you have one element in the list, it's already sorted so we don't need to do nothing 'cause it's already sorted.
+        // Edge case, if you have one element in the list, it's already sorted so we don't need to do nothing 'cause it's already sorted.
+        if (highIndex - lowIndex <= 1) return; 
 
         // Using 3 pointers to work around the list. A pivot, a left and right pointer.
         int pivot = unsortedList.get(highIndex - 1);
