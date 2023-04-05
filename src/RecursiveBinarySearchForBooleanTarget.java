@@ -11,7 +11,6 @@ public class RecursiveBinarySearchForBooleanTarget{
     public static int search(List<Boolean> list) {
         int high = list.size()-1;
         int low = 0;
-
         return findBoundaryRecursiveMode(list, low, high);
     }
 
@@ -30,8 +29,7 @@ public class RecursiveBinarySearchForBooleanTarget{
                 } else {
                     return findBoundaryRecursiveMode(arr, low, midPointIndex-1);
                 }
-            }
-            if(!midValue){
+            } else{
                 if(arr.size()-1 >= midPointIndex+1 && arr.get(midPointIndex+1)){
                     return midPointIndex+1;
                 }else {
