@@ -17,10 +17,10 @@ public class Main {
 
 
       public static void main(String[] args) {
-        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
-        int targetInList = 9;// index 5
-        int targetNotInList = 10; //return -1;
-        List<Integer> unorderedList = new ArrayList<>();
+//        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
+//        int targetInList = 9;// index 5
+//        int targetNotInList = 10; //return -1;
+//        List<Integer> unorderedList = new ArrayList<>();
 
 //        Random rd = new Random();
 //
@@ -39,8 +39,13 @@ public class Main {
 //        System.out.println(dsaAndTime(new QuickSort(), unorderedList));
 //        System.out.println(new BinarySearch().search(orderedList, targetInList));
 
-          System.out.println(new RecursiveBinarySearch().search(orderedList, targetInList));
-          System.out.println(new RecursiveBinarySearch().search(orderedList, targetNotInList));
+//          System.out.println(new RecursiveBinarySearch().search(orderedList, targetInList));
+//          System.out.println(new RecursiveBinarySearch().search(orderedList, targetNotInList));
+
+
+          List<Boolean> list = Arrays.asList(false,false,true);
+          System.out.println(RecursiveBinarySearchForBooleanTarget.search(list));
+
 
     }
 }
