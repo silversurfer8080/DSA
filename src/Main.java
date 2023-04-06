@@ -17,8 +17,8 @@ public class Main {
 
 
       public static void main(String[] args) {
-//        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
-//        int targetInList = 9;// index 5
+        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
+        int targetInList = 9;// index 5
 //        int targetNotInList = 10; //return -1;
 //        List<Integer> unorderedList = new ArrayList<>();
 
@@ -46,9 +46,11 @@ public class Main {
 //          List<Boolean> list = Arrays.asList(false,false,true);
 //          System.out.println(RecursiveBinarySearchForBooleanTarget.search(list));
 
-          List<Integer> list = Arrays.asList(1,3,5,5,6,8,10,11);
-          System.out.println(new FindNotSmaller().search(list, 9));
+//          List<Integer> list = Arrays.asList(1,3,5,5,6,8,10,11);
+//          System.out.println(new FindNotSmaller().search(list, 9));
 
+//          System.out.println(new FindFirstOccurrence().search(orderedList, targetInList));
+          System.out.println(new SquareRoot().find(8));
 
 
     }
