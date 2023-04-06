@@ -43,8 +43,12 @@ public class Main {
 //          System.out.println(new RecursiveBinarySearch().search(orderedList, targetNotInList));
 
 
-          List<Boolean> list = Arrays.asList(false,false,true);
-          System.out.println(RecursiveBinarySearchForBooleanTarget.search(list));
+//          List<Boolean> list = Arrays.asList(false,false,true);
+//          System.out.println(RecursiveBinarySearchForBooleanTarget.search(list));
+
+          List<Integer> list = Arrays.asList(1,3,5,5,6,8,10,11);
+          System.out.println(new FindNotSmaller().search(list, 9));
+
 
 
     }
