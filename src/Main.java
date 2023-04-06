@@ -50,7 +50,9 @@ public class Main {
 //          System.out.println(new FindNotSmaller().search(list, 9));
 
 //          System.out.println(new FindFirstOccurrence().search(orderedList, targetInList));
-          System.out.println(new SquareRoot().find(8));
+//          System.out.println(new SquareRoot().find(8));
+          List<Integer> montainList = Arrays.asList(1,3,5,5,6,4,3,2);
+          System.out.println(new PeakOfTheMontain().peakOfMountainArray(montainList));
 
 
     }
