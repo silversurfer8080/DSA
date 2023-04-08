@@ -1,4 +1,3 @@
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -24,7 +23,7 @@ import java.util.List;
  * Assign first 3 newspapers to one coworker then assign the rest to another. The time it takes for the first 3 newspapers is 7 + 2 + 5 = 14 and for the last 2 is 10 + 8 = 18.
  */
 // This problem has O(n log n) solution present here.
-public class NewpaperProblem {
+public class NewspaperProblem {
     public static int newspapersSplit(List<Integer> newspapersReadTimes, int numCoworkers) {
         int low = Collections.max(newspapersReadTimes);
         int high = 0;

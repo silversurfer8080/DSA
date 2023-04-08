@@ -1,7 +1,3 @@
-import contract.Sort;
-
-import java.time.Duration;
-import java.time.Instant;
 import java.util.*;
 
 public class Main {
@@ -45,7 +41,7 @@ public class Main {
           System.out.println(new PeakOfTheMontain().peakOfMountainArray(montainList));
 
           List<Integer> newspapers = Arrays.asList(7,2,5,10,8);
-          System.out.println(new NewpaperProblem().newspapersSplit(newspapers, 2)); //18
+          System.out.println(new NewspaperProblem().newspapersSplit(newspapers, 2)); //18
 
 
     }
