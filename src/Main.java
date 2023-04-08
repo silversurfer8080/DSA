@@ -6,19 +6,9 @@ import java.util.*;
 
 public class Main {
 
-      private static String dsaAndTime(Sort sortType, List<Integer> unsortedList){
-          Instant start = Instant.now();
-          List<Integer> orderedList = sortType.sort(unsortedList);
-          Instant end = Instant.now();
-          Duration timeElapsed = Duration.between(start, end);
-          return " result: " + orderedList + "\n Time taken in Milliseconds for 10k integers array: " +timeElapsed.toMillis();
-      }
-
-
-
       public static void main(String[] args) {
-        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
-        int targetInList = 9;// index 5
+//        List<Integer> orderedList = Arrays.asList(1,3,4,6,8,9,11,12,13);
+//        int targetInList = 9;// index 5
 //        int targetNotInList = 10; //return -1;
 //        List<Integer> unorderedList = new ArrayList<>();
 
@@ -53,6 +43,9 @@ public class Main {
 //          System.out.println(new SquareRoot().find(8));
           List<Integer> montainList = Arrays.asList(1,3,5,5,6,4,3,2);
           System.out.println(new PeakOfTheMontain().peakOfMountainArray(montainList));
+
+          List<Integer> newspapers = Arrays.asList(7,2,5,10,8);
+          System.out.println(new NewpaperProblem().newspapersSplit(newspapers, 2)); //18
 
 
     }
