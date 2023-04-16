@@ -15,4 +15,26 @@ public class FindMaxValueInTreeBinaryNode {
 
         return Integer.max(Integer.max(leftMaxValue, rightMaxValue), node.val);
     }
+
+    public static int maxValueUsingGlobalVariable(Node<Integer> node){
+        // A global variable initialized to record the current max value.
+        int maxValue = Integer.MIN_VALUE;
+
+        // Edge case:
+        if(node == null) {
+            return -1;
+        }
+        // If the node is bigger we set the max value to it's value.
+        if (node.val > maxValue){
+            maxValue = node.val;
+        }
+
+        // And we keep tracking the values in every node searching to the left and them to the right.
+        maxValueUsingGlobalVariable(node.left);
+        maxValueUsingGlobalVariable(node.right);
+
+        return maxValue;
+    }
+
+
 }
