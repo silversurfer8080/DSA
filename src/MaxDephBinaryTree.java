@@ -2,6 +2,8 @@ import java.util.Iterator;
 import java.util.function.Function;
 
 public class MaxDephBinaryTree {
+
+    // The time complexity is O(n). The space complexity is O(h) where h is the height of the tree
     private static int dfs(Node<Integer> root) {
         // Null node adds no depth.
         if (root == null) return 0;
