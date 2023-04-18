@@ -36,5 +36,17 @@ public class FindMaxValueInTreeBinaryNode {
         return maxValue;
     }
 
+    public static int findDepthNode(Node<Integer> node){
+        return node != null ? dfs(node) : 0;
+    }
+
+    private static int dfs(Node<Integer>node){
+        // Edge case
+        if(node == null) {
+             return 0;
+        }
+        // Number of nodes in the longest path of current subtree is equal of number of nodes of its two subtrees + 1 root
+        return Math.max(dfs(node.left), dfs(node.right))+1;
+    }
 
 }
