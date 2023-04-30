@@ -28,7 +28,6 @@ public class Main {
 //          System.out.println(new RecursiveBinarySearch().search(orderedList, targetInList));
 //          System.out.println(new RecursiveBinarySearch().search(orderedList, targetNotInList));
 
-
 //          List<Boolean> list = Arrays.asList(false,false,true);
 //          System.out.println(RecursiveBinarySearchForBooleanTarget.search(list));
 
