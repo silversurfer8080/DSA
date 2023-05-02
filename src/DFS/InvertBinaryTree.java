@@ -1,7 +1,8 @@
 package DFS;
 
 public class InvertBinaryTree {
-    // Problem: Given a binary tree, invert it's nodes
+    // Problem: Given a binary tree, invert its nodes
+    // The time complexity is O(n) where n is the size of the tree
     public static Node<Integer> invertTree(Node<Integer> tree){
         // If it's null we just return null for the node
         if(tree == null) return null;
