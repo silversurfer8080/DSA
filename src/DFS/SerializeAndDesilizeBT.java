@@ -38,7 +38,7 @@ public class SerializeAndDesilizeBT {
         // If we read a "x" from the sequence we know (by the rule we made) that is a null node
         String val = nodes.next();
         if(val.equals("x")) return null;
-
+        // We create an new Node and for it's binary Childs we call the function recursively
         Node curr = new Node(Integer.parseInt(val));
         curr.left = deserializeDFS(nodes);
         curr.right = deserializeDFS(nodes);
