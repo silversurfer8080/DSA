@@ -5,6 +5,7 @@ import DFS.Node;
 public class ValidBST {
 
     // Find out if a BST is valid, which means all the left nodes of the tree must be smaller.
+    // The time complexity is O(n), since we have to visite every node of tree.
 
     public static boolean dfs(Node<Integer> root, int min, int max){
         // Edge case,  root is null.
