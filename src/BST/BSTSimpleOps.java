@@ -37,8 +37,64 @@ public class BSTSimpleOps {
         return tree;
     }
 
+    public static Node<Integer> deleteNode(Node<Integer> root, Integer valueToDelete){
+        // Base case
+        if(root == null) return root;
 
+        // Recursivly calls for ancestors of node to be deleted
+        if(root.val > valueToDelete){
+            root.left = deleteNode(root.left, valueToDelete);
+            return root;
+        } else if(root.val < valueToDelete){
+            root.right = deleteNode(root.right, valueToDelete);
+            return root;
+        }
+        // After this we reach when the root is the node to be deleted. So we need operate here.
+        // Now we must check about the childs to replace the root node.
 
+        // If one of the children's node is empty
+        if(root.left == null){
+            Node<Integer> temp = root.right;
+            return temp;
+        } else if (root.right == null){
+            Node<Integer> temp = root.left;
+            return temp;
+        } else { // If both children exist
+            Node<Integer> succParent = root;
+            // Find the sucessor
+            Node<Integer> succ = root.right;
+            while(succ.left != null){
+                succParent = succ;
+                succ = succ.left;
+            }
+
+            // Delete the successor since successor is always the left child of it's parent we can safely make
+            // successor's right child as left of its parent.
+            // If there is no succ, then assign succ -> right to succParent -> right.
+            if(succParent != root){
+                succParent.left = succ.right;
+            } else {
+                succParent.right = succ.right;
+            }
+
+            // Copy the successor node to the root.
+            root.val = succ.val;
+
+            return root;
+        }
+    }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
