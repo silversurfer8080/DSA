@@ -51,7 +51,6 @@ public class BSTSimpleOps {
         }
         // After this we reach when the root is the node to be deleted. So we need operate here.
         // Now we must check about the childs to replace the root node.
-
         // If one of the children's node is empty
         if(root.left == null){
             Node<Integer> temp = root.right;
