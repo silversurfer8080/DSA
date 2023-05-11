@@ -1,3 +1,5 @@
+package Exercices.BinarySearch;
+
 import java.util.List;
 
 public class RecursiveBinarySearchForBooleanTarget{

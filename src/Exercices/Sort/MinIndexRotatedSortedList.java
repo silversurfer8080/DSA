@@ -1,3 +1,5 @@
+package Exercices.Sort;
+
 import java.util.List;
 
 public class MinIndexRotatedSortedList {

@@ -1,4 +1,6 @@
-package DFS;
+package Exercices.DepthFirstSearch;
+
+import DepthFirstSearch.Node;
 
 public class DFSSimpleSearch {
 

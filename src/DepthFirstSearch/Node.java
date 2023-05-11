@@ -1,4 +1,4 @@
-package DFS;
+package DepthFirstSearch;
 
 public class Node<T> {
     public T val;

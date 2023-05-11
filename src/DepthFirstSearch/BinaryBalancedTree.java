@@ -1,4 +1,4 @@
-package DFS;
+package DepthFirstSearch;
 
 public class BinaryBalancedTree {
     // Returns -1 if is not a balanced binary tree. The height if it is.

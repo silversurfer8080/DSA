@@ -1,3 +1,6 @@
+import Exercices.BinarySearch.NewspaperProblem;
+import Exercices.BinarySearch.PeakOfTheMontain;
+
 import java.util.*;
 
 public class Main {

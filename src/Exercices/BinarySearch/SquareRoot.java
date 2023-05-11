@@ -1,3 +1,5 @@
+package Exercices.BinarySearch;
+
 public class SquareRoot {
 
     // This is a problem to find a value result for a given number to be square root without use built-in function.

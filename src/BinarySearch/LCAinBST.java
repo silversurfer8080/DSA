@@ -1,6 +1,6 @@
-package BST;
+package BinarySearch;
 
-import DFS.Node;
+import DepthFirstSearch.Node;
 
 public class LCAinBST {
 

@@ -1,3 +1,5 @@
+package BinarySearch;
+
 import contract.Search;
 
 import java.util.List;

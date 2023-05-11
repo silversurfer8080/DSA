@@ -1,3 +1,5 @@
+package Exercices.BinarySearch;
+
 import contract.Search;
 
 import java.util.List;

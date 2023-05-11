@@ -1,6 +1,6 @@
-package BST;
+package BinarySearch;
 
-import DFS.Node;
+import DepthFirstSearch.Node;
 
 // This is an example about how to insert a node into a valid bst and return this new bst with the addition of the new item
 // if the value to be add in the valid bst, does nothing, don't insert anything and .

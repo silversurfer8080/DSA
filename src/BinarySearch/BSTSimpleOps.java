@@ -1,6 +1,6 @@
-package BST;
+package BinarySearch;
 
-import DFS.Node;
+import DepthFirstSearch.Node;
 
 public class BSTSimpleOps {
     // The time complexity here is O(h) where h is the height of the tree.

@@ -1,4 +1,6 @@
-package DFS;
+package Exercices.DepthFirstSearch;
+
+import DepthFirstSearch.Node;
 
 public class InvertBinaryTree {
     // Problem: Given a binary tree, invert its nodes

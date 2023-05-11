@@ -1,7 +1,6 @@
-package DFS;
+package Exercices.DepthFirstSearch;
 
-import java.util.ArrayList;
-import java.util.List;
+import DepthFirstSearch.Node;
 
 public class FindMaxValueInTreeBinaryNode {
 

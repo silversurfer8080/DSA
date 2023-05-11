@@ -1,3 +1,5 @@
+package Exercices.BinarySearch;
+
 import java.util.Collections;
 import java.util.List;
 

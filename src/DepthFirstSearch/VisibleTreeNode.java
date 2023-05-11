@@ -1,4 +1,4 @@
-package DFS;
+package DepthFirstSearch;
 
 // A search for the visible nodes of a tree. Visible node is when no node on the root position has a greater value, so if
 // the child has a greater value than his root father, it's visible.
