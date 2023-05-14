@@ -69,6 +69,28 @@ public class StringPlayground {
         return result;
    }
 
+    public static boolean isPalindrome2(String word1){
+        boolean result = true;
+
+        int i = 0;
+        int j = word1.length()-1;
+
+        while (i < j){
+            if(word1.charAt(i) != word1.charAt(j)){
+                result = false;
+            }
+            i++;
+            j--;
+        }
+        return result;
+   }
+
+
+
+
+
+
+
 
 
 
