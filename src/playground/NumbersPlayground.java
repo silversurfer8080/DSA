@@ -2,8 +2,9 @@ package playground;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
-public class numbersPlayground {
+public class NumbersPlayground {
 
     public static int largestNumber(int[] nums){
         int maxResult = nums[0];
@@ -58,9 +59,11 @@ public class numbersPlayground {
         return result;
     }
     public static int secondLargestNumber3(int[] nums){
-        List<Integer> list = Arrays.stream(nums).boxed().toList();
-        Collections.sort(list);
-        return list.get(1);
+        List<Integer> list = Arrays.stream(nums).sorted().boxed().toList();
+        for (int i = list.size() - 1; i >= 0; i--) {
+            if(list.get(i-1) != list.get(list.size()-1)) return list.get(i-1);
+        }
+        return -1;
     }
 
 

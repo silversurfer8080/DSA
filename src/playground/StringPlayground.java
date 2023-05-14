@@ -61,13 +61,15 @@ public class StringPlayground {
    }
     public static boolean isPalindrome1(String word1){
         boolean result = false;
-        String palindromeWord1 = null;
+        String palindromeWord1 = "";
         for (int i = word1.length()-1; i >= 0; i--) {
             palindromeWord1 += word1.charAt(i);
         }
         if(word1.equals(palindromeWord1)) result = true;
         return result;
    }
+
+
 
 
 
