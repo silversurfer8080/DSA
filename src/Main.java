@@ -1,3 +1,4 @@
+import Exercices.Backtracking.GenerateValidParentheses;
 import Exercices.BinarySearch.NewspaperProblem;
 import Exercices.BinarySearch.PeakOfTheMontain;
 
@@ -41,11 +42,15 @@ public class Main {
 //          System.out.println(new SquareRoot().find(8));
 
 
-          List<Integer> montainList = Arrays.asList(1,3,5,5,6,4,3,2);
-          System.out.println(new PeakOfTheMontain().peakOfMountainArray(montainList));
+//          List<Integer> montainList = Arrays.asList(1,3,5,5,6,4,3,2);
+//          System.out.println(new PeakOfTheMontain().peakOfMountainArray(montainList));
+//
+//          List<Integer> newspapers = Arrays.asList(7,2,5,10,8);
+//          System.out.println(new NewspaperProblem().newspapersSplit(newspapers, 2)); //18
 
-          List<Integer> newspapers = Arrays.asList(7,2,5,10,8);
-          System.out.println(new NewspaperProblem().newspapersSplit(newspapers, 2)); //18
+          GenerateValidParentheses g = new GenerateValidParentheses();
+          g.generateParenthesis(4).stream().forEach(System.out::println);
+
 
 
     }
