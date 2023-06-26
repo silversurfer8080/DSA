@@ -32,4 +32,6 @@ public class LettersPermutation {
         }
     }
 
+    // The time complexity is O(n!) and the Space complexity is given by the height of the state-space tree, which is O(n).
+
 }
