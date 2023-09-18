@@ -1,8 +1,8 @@
 import Exercices.Backtracking.GenerateValidParentheses;
-import Exercices.BinarySearch.NewspaperProblem;
-import Exercices.BinarySearch.PeakOfTheMontain;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 public class Main {
 
@@ -41,17 +41,26 @@ public class Main {
 //          System.out.println(new FindFirstOccurrence().search(orderedList, targetInList));
 //          System.out.println(new SquareRoot().find(8));
 
-
 //          List<Integer> montainList = Arrays.asList(1,3,5,5,6,4,3,2);
 //          System.out.println(new PeakOfTheMontain().peakOfMountainArray(montainList));
 //
 //          List<Integer> newspapers = Arrays.asList(7,2,5,10,8);
 //          System.out.println(new NewspaperProblem().newspapersSplit(newspapers, 2)); //18
 
-          GenerateValidParentheses g = new GenerateValidParentheses();
-          g.generateParenthesis(4).stream().forEach(System.out::println);
+          //GenerateValidParentheses g = new GenerateValidParentheses();
+//          g.generateParenthesis(4).stream().forEach(System.out::println);
 
+          List<Integer> listOfIntegers = Arrays.asList(5,7,8,1,2,9);
 
+          Optional<Integer> minValue = listOfIntegers.stream().reduce((value1, value2) -> value1<value2 ? value1:value2);
+//          minValue.ifPresent(System.out::println);
+
+          List<Integer> numbers =Arrays.asList(5,7,8,1,2,9);
+//                  Optional<Integer> maxNumber = numbers.stream().max(Integer::compare);
+//          System.out.println(maxNumber);
+          List<Integer> numbbers = List.of(1, 2, 3, 4, 5);
+          Integer max = numbbers.stream().mapToInt(v -> v).max().orElseThrow();
+          System.out.println("Max value: " + max);
 
     }
 }
