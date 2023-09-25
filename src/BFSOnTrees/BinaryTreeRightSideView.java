@@ -20,7 +20,7 @@ public class BinaryTreeRightSideView {
 
             for (int i = 0; i < n; i++){
                 Node<Integer> node = queue.pop();
-                // Add right child first so it'll pop out of the queue first.
+                // Add right child first, so it'll pop out of the queue first.
                 if(node.right != null) queue.add(node.right);
                 if(node.left != null) queue.add(node.left);
             }
